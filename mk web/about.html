@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabascript</title>
+</head>
+<body>
+    
+<h2 id="date">Time is show now.</h2>
+
+
+<button type="button" onclick="time()"> Date </button>
+
+<!--bulb-->
+
+<button type="button" onclick="off()"> Turn off </button>
+
+<img id="bulb" src="assets/img/balboff.jpg" alt="bulb">
+
+<button type="button" onclick="on()"> Turn on </button>
+
+
+
+<!--bird-->
+
+
+
+<button type="button" onclick="fly1()"> 1 </button>
+
+<img id="bird" src="assets/img/4.webp" alt="bird">
+
+<button type="button" onclick="fly2()"> 2 </button>
+
+<!-- <img id="bird" src="assets/img/1.jpg" alt="bird">
+
+<button type="button" onclick="fly2()"> 3 </button>
+
+<img id="bird" src="assets/img/2.jpg" alt="bird">
+
+<button type="button" onclick="fly2()"> 4 </button>
+
+<img id="bird" src="assets/img/3.jpg" alt="bird">
+ -->
+
+
+
+
+
+<!--bird-->
+
+
+
+
+
+
+<script>
+    function  fly1(){
+        document.getElementById('bird').src="assets/img/1.jpg"
+    }
+
+
+
+    function  fly2(){
+        document.getElementById('bird').src="assets/img/2.jpg"
+    }
+
+    // function  fly1(){
+    //     document.getElementById('bird').src="assets/img/3.jpg"
+    // }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+function off(){
+        document.getElementById('bulb').src="assets/img/balboff.jpg";
+
+}
+
+function on(){
+        document.getElementById('bulb').src="assets/img/balbon.jpg";
+
+}
+</script>
+
+<script>
+
+    function time(){
+        document.getElementById('date').innerHTML= Date();
+    }
+</script>
+</body>
+</html>
